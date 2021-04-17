@@ -1,0 +1,21 @@
+[02-May-2020 14:29:02 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE finalizada == 1' at line 1' in /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php:30
+Stack trace:
+#0 /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php(30): PDOStatement->execute()
+#1 /home/sanfranc/public_html/blitz/controladores/reportes.controlador.php(129): ModeloReportes::mdlDescargarReporteEncuestados('encuesta')
+#2 /home/sanfranc/public_html/blitz/vistas/modulos/reportes.php(11): ControladorReportes->ctrDescargarReporteEncuestados()
+#3 {main}
+  thrown in /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php on line 30
+[02-May-2020 14:29:37 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1 ORDER BY id asc' at line 1' in /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php:30
+Stack trace:
+#0 /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php(30): PDOStatement->execute()
+#1 /home/sanfranc/public_html/blitz/controladores/reportes.controlador.php(129): ModeloReportes::mdlDescargarReporteEncuestados('encuesta')
+#2 /home/sanfranc/public_html/blitz/vistas/modulos/reportes.php(11): ControladorReportes->ctrDescargarReporteEncuestados()
+#3 {main}
+  thrown in /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php on line 30
+[02-May-2020 14:29:45 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1 ORDER BY id asc' at line 1' in /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php:30
+Stack trace:
+#0 /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php(30): PDOStatement->execute()
+#1 /home/sanfranc/public_html/blitz/controladores/reportes.controlador.php(129): ModeloReportes::mdlDescargarReporteEncuestados('encuesta')
+#2 /home/sanfranc/public_html/blitz/vistas/modulos/reportes.php(11): ControladorReportes->ctrDescargarReporteEncuestados()
+#3 {main}
+  thrown in /home/sanfranc/public_html/blitz/modelos/reportes.modelo.php on line 30
