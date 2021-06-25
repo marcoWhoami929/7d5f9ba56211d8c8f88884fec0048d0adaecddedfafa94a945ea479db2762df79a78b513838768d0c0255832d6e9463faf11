@@ -144,7 +144,7 @@
                       "'.$telefono.'",
                       "'.$movil.'",
                       "'.$correoElectronico.'",
-                      "'.$facebook.'",
+                      "'.utf8_encode($facebook).'",
                       "'.$localizador[$i]["fecha"].'",
                       "'.$horarioSemana.'",
                       "'.$horarioSabado.'"

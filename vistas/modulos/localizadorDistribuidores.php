@@ -286,14 +286,17 @@
       if (localStorage.getItem("nombreDistribuidor") == "TODOS LOS DISTRIBUIDORES") {
 
         var proveedor = "TODOS";
+        var rutaReporteLocalizador = "vistas/modulos/reportes.php?reporteLocalizador=coordenadas&latitud="+lat+"&longitud="+long+"";
+        $("#reporteLocalizador").attr('href',rutaReporteLocalizador);
       }else{
 
         var proveedor = localStorage.getItem("nombreDistribuidor");
+        var rutaReporteLocalizador = "vistas/modulos/reportes.php?reporteLocalizador=coordenadas&latitud="+lat+"&longitud="+long+"";
+        $("#reporteLocalizador").attr('href',rutaReporteLocalizador);
       }
       var urlMapaDistribuidores = "https://sanfranciscodekkerlab.com/localizador/localizador.php?latitud="+lat+"&longitud="+long+"&marcadores="+localStorage.getItem("marcadoresMapaDistribuidores")+"&proveedor="+proveedor;
 
-      var rutaReporteLocalizador = "vistas/modulos/reportes.php?reporteLocalizador=coordenadas&latitud="+lat+"&longitud="+long+"";
-      $("#reporteLocalizador").attr('href',rutaReporteLocalizador);
+      
 
       $("#rutaMapaDistribuidor").val(urlMapaDistribuidores);
 

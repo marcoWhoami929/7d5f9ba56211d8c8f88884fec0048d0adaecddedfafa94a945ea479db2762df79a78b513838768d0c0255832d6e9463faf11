@@ -50,7 +50,22 @@ class ModeloReportes{
 		$stmt = null;
 	}
 	static public function  mdlDescargarReporteLocalizadorDistribuidores($tabla,$latitud,$longitud){
-		/*===================================
+
+		if ($latitud === undefined) {
+
+			 $stmt =  Conexion::conectar()->prepare('SELECT * FROM coordenadas as coord LEFT OUTER JOIN encuesta as enc ON enc.id = coord.idEncuesta where enc.finalizada = 0');
+
+			$stmt -> execute();
+
+			return $stmt -> fetchAll();
+
+			$stmt-> close();
+
+			$stmt = null;
+			
+		}else{
+
+			/*===================================
 			=            LOCALIZADOR            =
 			===================================*/
 			function getBoundaries($lat, $lng, $distance)
@@ -114,6 +129,9 @@ class ModeloReportes{
 		$stmt-> close();
 
 		$stmt = null;
+
+		}
+		
 	}
 	static public function  mdlDescargarReporteLocalizadorProveedores($tabla,$proveedor){
 		
